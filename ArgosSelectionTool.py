@@ -49,7 +49,7 @@ while lineString != "":
     lon_condition = the_box['x_min'] < lon < the_box['x_max']
 
     #Report the status of the points
-    if lat_condition & lon_condition == True:
+    if lat_condition & lon_condition:
         print(f'Record {event_id}: {tag_id} was IN the box at {timestamp}')
     else:
         print(f'Record {event_id}: {tag_id} was NOT IN the box at {timestamp}')
